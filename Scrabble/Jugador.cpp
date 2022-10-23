@@ -1,17 +1,49 @@
 #include "Jugador.h"
 
-void Jugador::insertarPalabra(Palabra* palabra) { this->palabras.insertarPalabra(palabra); }
-
-Palabras Jugador::getPalabras() { return this->palabras; }
-
-void Jugador::insertarFicha(Ficha* ficha) { this->fichas.emplace_back(ficha); }
-
-Ficha* Jugador::getFichaPos(int pos) { return this->fichas.at(pos); }
-
-void Jugador::calcularScore() {
-	int cantidadFichas = this->fichas.size();
-	for (int i = 0; i < cantidadFichas; i++)
-		this->score += fichas.at(i)->getLetra();
+Jugador::Jugador(string nom) {
+	nombre = nom;
+	disponibles = new FichasJugador();
 }
 
-int Jugador::getScore() { return this->score; }
+Jugador::Jugador(string nom, FichasJugador* vec) {
+	nombre = nom;
+	disponibles = vec;
+}
+
+Jugador::~Jugador() {
+	disponibles->~FichasJugador();
+}
+
+void Jugador::SetNombre(string x) {
+	nombre = x;
+}
+
+string Jugador::GetNombre() const {
+	return nombre;
+}
+
+void Jugador::SetDisponibles(FichasJugador* vec) {
+	disponibles = vec;
+}
+
+FichasJugador* Jugador::GetDisponibles() const {
+	return disponibles;
+}
+
+void Jugador::Mostrar() {
+	cout << "Nombre de jugador: " << GetNombre() << endl;
+	cout << "Piezas disponibles: ";
+	disponibles->Mostrar();
+	cout << endl << endl;
+}
+
+string Jugador::EliminarPivote(string palabra, char pivote) {
+	int pivPos = palabra.find(pivote);
+	string nueva = palabra.erase(pivPos, 1);
+	return nueva;
+}
+
+void Jugador::Intento(string palabra, char pivote) {
+	string verificar = EliminarPivote(palabra, pivote);
+	disponibles->ActualizarFichas(verificar);
+}

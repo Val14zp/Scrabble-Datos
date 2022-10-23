@@ -12,3 +12,4 @@ public:
 	void  Ingresar(Jugador* jug);
 	void Mostrar();
 };
+

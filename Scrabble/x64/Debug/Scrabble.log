@@ -1,1 +1,24 @@
-﻿  Scrabble.vcxproj -> C:\Users\nicol\OneDrive\Documentos\GitHub\Scrabble\Scrabble\x64\Debug\Scrabble.exe
+﻿  Ficha.cpp
+  FichasJugador.cpp
+C:\Users\nicol\OneDrive\Documentos\GitHub\Scrabble-Datos\Scrabble\FichasJugador.cpp(5,29): warning C4018: '<': signed/unsigned mismatch
+C:\Users\nicol\OneDrive\Documentos\GitHub\Scrabble-Datos\Scrabble\FichasJugador.cpp(17,29): warning C4018: '<': signed/unsigned mismatch
+C:\Users\nicol\OneDrive\Documentos\GitHub\Scrabble-Datos\Scrabble\FichasJugador.cpp(26,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\nicol\OneDrive\Documentos\GitHub\Scrabble-Datos\Scrabble\FichasJugador.cpp(34,29): warning C4018: '<': signed/unsigned mismatch
+C:\Users\nicol\OneDrive\Documentos\GitHub\Scrabble-Datos\Scrabble\FichasJugador.cpp(55,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\nicol\OneDrive\Documentos\GitHub\Scrabble-Datos\Scrabble\FichasJugador.cpp(69,29): warning C4018: '<': signed/unsigned mismatch
+  Juego.cpp
+  Jugador.cpp
+C:\Users\nicol\OneDrive\Documentos\GitHub\Scrabble-Datos\Scrabble\Jugador.cpp(41,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Jugadores.cpp
+  Palabra.cpp
+  Palabras.cpp
+  Scrabble.cpp
+C:\Users\nicol\OneDrive\Documentos\GitHub\Scrabble-Datos\Scrabble\Scrabble.cpp(15,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\nicol\OneDrive\Documentos\GitHub\Scrabble-Datos\Scrabble\Scrabble.cpp(26,31): warning C4018: '<': signed/unsigned mismatch
+  Tablero.cpp
+C:\Users\nicol\OneDrive\Documentos\GitHub\Scrabble-Datos\Scrabble\Tablero.cpp(36,17): warning C4154: deletion of an array expression; conversion to pointer supplied
+  Vista.cpp
+  Generating Code...
+C:\Users\nicol\OneDrive\Documentos\GitHub\Scrabble-Datos\Scrabble\Vista.cpp(32): warning C4715: 'Vista::NumJugadores': not all control paths return a value
+C:\Users\nicol\OneDrive\Documentos\GitHub\Scrabble-Datos\Scrabble\FichasJugador.cpp(65): warning C4715: 'FichasJugador::ActualizarFichas': not all control paths return a value
+  Scrabble.vcxproj -> C:\Users\nicol\OneDrive\Documentos\GitHub\Scrabble-Datos\x64\Debug\Scrabble.exe
